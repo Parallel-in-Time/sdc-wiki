@@ -1,15 +1,14 @@
 _:postal_horn: This project intends to accumulate theoretical content and literature references on SDC and related time integration methods, using Markdown-based wiki pages. Its goal is to be an evolving source of knowledge, that could be used by people starting to learn about SDC, or eventually specialists in this field. **Any contribution to improve it is very welcome !**_
 
-Spectral Deferred Correction (SDC) methods are a class of time-stepping algorithm allowing to approximate the solution of initial value problem of the form :
+Spectral Deferred Correction (SDC) methods are a class of time-stepping algorithms allowing to approximate the solution of initial value problems of the form :
 
 $$
 \frac{du}{dt} = f(u,t),\quad t \in [0, T],\quad u(0) = u_0
 $$
 
-Those can Ordinary Differential Equations (ODEs) or systems of ODEs resulting from the partial discretization of Partial Differential Equations (PDEs).
-SDC was originally introduced in 2000 [[1]](#ref1), based on the previously known Deferred Correction method, and allows to easily build time integration schemes with _piloted order of accuracy (from low to high)_.
-It has received a particular attention since then, _e.g_ for the development of Implicit-Explicit (IMEX) time integration scheme [[2]](#ref2) or parallel-in-time methods [[3]](#ref3).
-Many variants have been developed since, and this Wiki intends to provide a extended state-of-the art overview of SDC methods and their implementations.
+Those can be Ordinary Differential Equations (ODEs) or systems of ODEs resulting from the partial discretization of Partial Differential Equations (PDEs).
+SDC was originally introduced in 2000 [[1]](#ref1) as a particular Deferred Correction method, and allows to easily build time integration schemes with _piloted order of accuracy (from low to high)_.
+It has received a particular attention since then, _e.g_ for the development of Implicit-Explicit (IMEX) time integration scheme [[2]](#ref2) or parallel-in-time methods [[3]](#ref3) (see a more [detailled historical review](./historicalReview.md)).
 
 ## Table of content
 
